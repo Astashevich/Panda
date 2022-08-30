@@ -1,4 +1,4 @@
-export const ApplicationName = 'Volat';
+export const ApplicationName = 'Panda';
 
 export const QueryParameterNames = {
   ReturnUrl: 'returnUrl',

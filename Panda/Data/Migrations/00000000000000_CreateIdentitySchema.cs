@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace Volat.Data.Migrations
+namespace Panda.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

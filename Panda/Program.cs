@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
-using Volat.Data;
-using Volat.Models;
+using Panda.Data;
+using Panda.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

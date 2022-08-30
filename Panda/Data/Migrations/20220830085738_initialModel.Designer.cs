@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Volat.Data;
+using Panda.Data;
 
 #nullable disable
 
-namespace Volat.Data.Migrations
+namespace Panda.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20220830085738_initialModel")]
@@ -328,7 +328,7 @@ namespace Volat.Data.Migrations
                     b.ToTable("Owners");
                 });
 
-            modelBuilder.Entity("Volat.Models.ApplicationUser", b =>
+            modelBuilder.Entity("Panda.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -393,7 +393,7 @@ namespace Volat.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Volat.Models.House", b =>
+            modelBuilder.Entity("Panda.Models.House", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -428,7 +428,7 @@ namespace Volat.Data.Migrations
                     b.ToTable("Houses");
                 });
 
-            modelBuilder.Entity("Volat.Models.Order", b =>
+            modelBuilder.Entity("Panda.Models.Order", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -469,7 +469,7 @@ namespace Volat.Data.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Volat.Models.Pet", b =>
+            modelBuilder.Entity("Panda.Models.Pet", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -520,7 +520,7 @@ namespace Volat.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Volat.Models.ApplicationUser", null)
+                    b.HasOne("Panda.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -529,7 +529,7 @@ namespace Volat.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Volat.Models.ApplicationUser", null)
+                    b.HasOne("Panda.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -544,7 +544,7 @@ namespace Volat.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Volat.Models.ApplicationUser", null)
+                    b.HasOne("Panda.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -553,16 +553,16 @@ namespace Volat.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Volat.Models.ApplicationUser", null)
+                    b.HasOne("Panda.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Volat.Models.Order", b =>
+            modelBuilder.Entity("Panda.Models.Order", b =>
                 {
-                    b.HasOne("Volat.Models.House", "House")
+                    b.HasOne("Panda.Models.House", "House")
                         .WithMany()
                         .HasForeignKey("HouseId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -579,9 +579,9 @@ namespace Volat.Data.Migrations
                     b.Navigation("Owner");
                 });
 
-            modelBuilder.Entity("Volat.Models.Pet", b =>
+            modelBuilder.Entity("Panda.Models.Pet", b =>
                 {
-                    b.HasOne("Volat.Models.House", "House")
+                    b.HasOne("Panda.Models.House", "House")
                         .WithMany()
                         .HasForeignKey("HouseId")
                         .OnDelete(DeleteBehavior.Cascade)

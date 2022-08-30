@@ -13,11 +13,11 @@ window.fetch = () => {
       ok: true,
       json: () => Promise.resolve({
         "authority": "https://localhost:7137",
-        "client_id": "Volat",
+        "client_id": "Panda",
         "redirect_uri": "https://localhost:7137/authentication/login-callback",
         "post_logout_redirect_uri": "https://localhost:7137/authentication/logout-callback",
         "response_type": "id_token token",
-        "scope": "VolatAPI openid profile"
+        "scope": "PandaAPI openid profile"
      })
     });
 };

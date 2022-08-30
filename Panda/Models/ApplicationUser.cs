@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Volat.Models
+namespace Panda.Models
 {
     public class ApplicationUser : IdentityUser
     {
