@@ -1,6 +1,6 @@
-﻿using Volat.Models.Enums;
+﻿using Panda.Models.Enums;
 
-namespace Volat.Models
+namespace Panda.Models
 {
     public class House
     {

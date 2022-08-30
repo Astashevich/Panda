@@ -3,16 +3,16 @@ using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Panda.Models;
-using Volat.Models;
+using Panda.Models;
 
-namespace Volat.Data
+namespace Panda.Data
 {
     public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
     {
-        DbSet<Pet> Pets { get; set; }
-        DbSet<Order> Orders { get; set; }
-        DbSet<House> Houses { get; set; }
-        DbSet<Owner> Owners { get; set; }
+        public DbSet<Pet> Pets { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<House> Houses { get; set; }
+        public DbSet<Owner> Owners { get; set; }
 
         public ApplicationDbContext(DbContextOptions options, IOptions<OperationalStoreOptions> operationalStoreOptions)
             : base(options, operationalStoreOptions)

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Volat.Controllers
+namespace Panda.Controllers
 {
     public class OidcConfigurationController : Controller
     {

@@ -1,4 +1,4 @@
-﻿namespace Volat.Models.Enums
+﻿namespace Panda.Models.Enums
 {
     public enum Family
     {

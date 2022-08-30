@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Volat.Data.Migrations
+namespace Panda.Data.Migrations
 {
     public partial class initialModel : Migration
     {
