@@ -1,4 +1,5 @@
-﻿using Volat.Models.Enums;
+﻿using Panda.Models;
+using Volat.Models.Enums;
 
 namespace Volat.Models
 {
@@ -6,8 +7,8 @@ namespace Volat.Models
     {
         public string Id { get; set; }
         public DateTime RegistrationTime { get; set; }
-        public string OwnerFullName { get; set; }
-        public string OwnerPhoneNumber { get; set; }
+        public Owner Owner { get; set; }
+        public string OwnerId { get; set; }
         public string PetName { get; set; }
         public Family Family { get; set; }
         public DateTime CheckInDate { get; set; }

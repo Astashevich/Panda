@@ -1,4 +1,5 @@
-﻿using Volat.Models.Enums;
+﻿using Panda.Models;
+using Volat.Models.Enums;
 
 namespace Volat.Models
 {
@@ -6,11 +7,13 @@ namespace Volat.Models
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public string OwnerFullName { get; set; }
-        public string OwnerPhoneNumber { get; set; }
+        public double Age { get; set; }
+        public Owner Owner { get; set; }
+        public string OwnerId { get; set; }
         public Family Family { get; set; }
         public string Note { get; set; }
         public House House { get; set; }
         public string HouseId { get; set; }
+        public string Photo { get; set; }
     }
 }
