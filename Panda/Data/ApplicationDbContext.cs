@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Panda.Models;
-using Panda.Models;
 
 namespace Panda.Data
 {
