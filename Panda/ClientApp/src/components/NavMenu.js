@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { NavDropdown } from 'react-bootstrap';
 import { LoginMenu } from './api-authorization/LoginMenu';
 import './NavMenu.css';
 
@@ -34,12 +35,9 @@ export class NavMenu extends Component {
                 <NavItem>
                   <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
-                </NavItem>
+                <NavDropdown title="Admin">
+                  <NavLink tag={Link} className="text-dark" to="/create-new-house">Create new house</NavLink>
+                </NavDropdown>
                 <LoginMenu>
                 </LoginMenu>
               </ul>
