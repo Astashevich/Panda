@@ -19,7 +19,7 @@ namespace Panda.Data.Migrations
                     Family = table.Column<int>(type: "int", nullable: false),
                     SizeLenght = table.Column<double>(type: "float", nullable: false),
                     SizeWidth = table.Column<double>(type: "float", nullable: false),
-                    SizeHeight = table.Column<double>(type: "float", nullable: false),
+                    SizeHeigth = table.Column<double>(type: "float", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     Picture = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
