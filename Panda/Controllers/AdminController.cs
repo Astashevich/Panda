@@ -39,7 +39,6 @@ namespace Panda.Controllers
             IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
             var house = new House
             {
-                Id = Guid.NewGuid().ToString(),
                 Number = int.Parse(formData["number"]),
                 Price = double.Parse(formData["price"], formatter),
                 Family = (Family)int.Parse(formData["family"]),
