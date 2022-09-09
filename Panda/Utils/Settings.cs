@@ -2,6 +2,6 @@
 {
     public class Settings
     {
-        public static readonly string UploadDir = Directory.GetCurrentDirectory() + @"\bin\Uploads";
+        public static readonly string UploadDir = Directory.GetCurrentDirectory() + @"\ClientApp\public\pictures";
     }
 }
